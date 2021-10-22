@@ -1,11 +1,10 @@
 import db from '../firebase'
 import { doc, getDoc, runTransaction } from "firebase/firestore";
 
-
+const docRef = doc(db, "codes", "hjDTL3sTtxxcABGeI6yp");
 class codeService {
     // GET ONE MONTH
     async getOneMonthCodes() {
-        const docRef = doc(db, "codes", "KFs1hhJ8kTI27YFWTnyI");
         const docSnap = await getDoc(docRef);
         if (docSnap.exists()) {
             const codes = docSnap.data();
@@ -17,7 +16,6 @@ class codeService {
     }
     // GET THREE MONTHS
     async getThreeMonthsCodes() {
-        const docRef = doc(db, "codes", "KFs1hhJ8kTI27YFWTnyI");
         const docSnap = await getDoc(docRef);
         if (docSnap.exists()) {
             const codes = docSnap.data();
@@ -29,7 +27,6 @@ class codeService {
     }
     // GET SIX MONTHS
     async getSixMonthsCodes() {
-        const docRef = doc(db, "codes", "KFs1hhJ8kTI27YFWTnyI");
         const docSnap = await getDoc(docRef);
         if (docSnap.exists()) {
             const codes = docSnap.data();
@@ -41,7 +38,6 @@ class codeService {
     }
     // GET TWELVE MONTHS
     async getTwelveMonthsCodes() {
-        const docRef = doc(db, "codes", "KFs1hhJ8kTI27YFWTnyI");
         const docSnap = await getDoc(docRef);
         if (docSnap.exists()) {
             const codes = docSnap.data();
@@ -55,7 +51,6 @@ class codeService {
     async updateOneMonthCodes() {
         try {
             await runTransaction(db, async (transaction) => {
-                const docRef = doc(db, "codes", "KFs1hhJ8kTI27YFWTnyI");
                 const sfDoc = await transaction.get(docRef);
                 if (!sfDoc.exists()) {
                     throw "Document does not exist!";
@@ -72,7 +67,6 @@ class codeService {
     async updateThreeMonthsCodes() {
         try {
             await runTransaction(db, async (transaction) => {
-                const docRef = doc(db, "codes", "KFs1hhJ8kTI27YFWTnyI");
                 const sfDoc = await transaction.get(docRef);
                 if (!sfDoc.exists()) {
                     throw "Document does not exist!";
@@ -89,7 +83,6 @@ class codeService {
     async updateSixMonthsCodes() {
         try {
             await runTransaction(db, async (transaction) => {
-                const docRef = doc(db, "codes", "KFs1hhJ8kTI27YFWTnyI");
                 const sfDoc = await transaction.get(docRef);
                 if (!sfDoc.exists()) {
                     throw "Document does not exist!";
@@ -106,7 +99,6 @@ class codeService {
     async updateTwelveMonthsCodes() {
         try {
             await runTransaction(db, async (transaction) => {
-                const docRef = doc(db, "codes", "KFs1hhJ8kTI27YFWTnyI");
                 const sfDoc = await transaction.get(docRef);
                 if (!sfDoc.exists()) {
                     throw "Document does not exist!";

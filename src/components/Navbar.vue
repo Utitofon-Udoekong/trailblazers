@@ -56,7 +56,7 @@
     >
       <span class="flex w-full justify-between items-center p-4 border-b">
         <img src="@/assets/images/logo.png" class="w-16 sm:w-auto sm:h-20 h-12" alt="logo" />
-        <span class="text-2xl" @click="isOpen = false">X</span>
+        <span class="text-2xl cursor-pointer" @click="isOpen = false">X</span>
       </span>
       <div class="flex justify-center items-center flex-col h-auto">
         <span

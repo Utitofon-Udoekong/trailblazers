@@ -49,7 +49,7 @@
                 }"
             >Pay with Flutterwave</flutterwave-pay-button-vue>
         </div>
-        <p class="text-md md:text-lg font-bold pt-8 flex">
+        <p v-if="code !== 'how you reach here'" class="text-md md:text-lg font-bold pt-8 flex">
             ACCESS CODE TO JOIN OUR VIP CHANNEL: {{ code }}
             <span
                 class="ml-4 cursor-pointer"
@@ -59,21 +59,21 @@
                 <Icon icon="clarity:copy-to-clipboard-line" color="#444" width="20" height="20" />
             </span>
         </p>
-        <div v-if="code !== 'Will be gotten after payment'">
+        <ul class="font-semibold list-disc pl-4" v-if="code !== 'how you reach here'">
             <p>STEPS TO JOIN VIP</p>
-            <p>1 COPY THE CODE SENT TO YOU</p>
-            <p>2 CLICK ON THE BUTTON “LECTUM BOT”</p>
-            <p>3 START THE BOT</p>
-            <p>4 CLICK ON “ USE ACTIVATION CODE”</p>
-            <p>5 PASTE THE CODE YOU COPIED</p>
-        </div>
+            <li>COPY THE CODE SENT TO YOU</li>
+            <li>CLICK ON THE BUTTON BELOW THIS LIST</li>
+            <li>START THE BOT</li>
+            <li>CLICK ON “USE ACTIVATION CODE”</li>
+            <li>PASTE THE CODE YOU COPIED</li>
+        </ul>
         <button
-            v-if="code !== 'Will be gotten after payment'"
+            v-if="code !== 'how you reach here' "
             class="block p-4 lectum-blue text-white font-semibold rounded-md mt-6 w-full sm:w-auto"
         >
             <a
                 href="http://t.me/lectumbot?start=sub-4b89b8b9-5b27-4526-b952-f1d7050da7b0"
-            >Chat with Lectum Bot</a>
+            >Click Here</a>
         </button>
     </div>
 </template>
@@ -98,16 +98,16 @@ export default {
             console.log("callback", response)
             if (response.amount === 50) {
                 store.dispatch('getOneMonthCodes');
-                store.dispatch('updateOneMonthCodes')
+                // store.dispatch('updateOneMonthCodes')
             } else if (response.amount === 120) {
                 store.dispatch('getThreeMonthsCodes');
-                store.dispatch('updateThreeMonthsCodes')
+                // store.dispatch('updateThreeMonthsCodes')
             } else if (response.amount === 250) {
                 store.dispatch('getSixMonthsCodes');
-                store.dispatch('updateSixMonthsCodes')
+                // store.dispatch('updateSixMonthsCodes')
             } else {
                 store.dispatch('getTwelveMonthsCodes');
-                store.dispatch('updateTwelveMonthsCodes')
+                // store.dispatch('updateTwelveMonthsCodes')
             }
         }
 

@@ -3,7 +3,7 @@ import codeServices from '../services/codeServices'
 
 export default createStore({
   state: {
-    code: "Will be gotten after payment",
+    code: "how you reach here",
     package: {
       title: "No package found",
       price: 0
