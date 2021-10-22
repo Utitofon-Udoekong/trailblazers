@@ -59,14 +59,14 @@
                 <Icon icon="clarity:copy-to-clipboard-line" color="#444" width="20" height="20" />
             </span>
         </p>
-        <p>
-            STEPS TO JOIN VIP 
-        </p>
-        <p>1 COPY THE CODE SENT TO YOU </p>
-        <p>2 CLICK ON THE BUTTON “LECTUM BOT”</p>
-        <p>3 START THE BOT </p>
-        <p>4 CLICK ON “ USE ACTIVATION CODE”</p>
-        <p>5 PASTE THE  CODE  YOU COPIED</p>
+        <div v-if="code !== 'Will be gotten after payment'">
+            <p>STEPS TO JOIN VIP</p>
+            <p>1 COPY THE CODE SENT TO YOU</p>
+            <p>2 CLICK ON THE BUTTON “LECTUM BOT”</p>
+            <p>3 START THE BOT</p>
+            <p>4 CLICK ON “ USE ACTIVATION CODE”</p>
+            <p>5 PASTE THE CODE YOU COPIED</p>
+        </div>
         <button
             v-if="code !== 'Will be gotten after payment'"
             class="block p-4 lectum-blue text-white font-semibold rounded-md mt-6 w-full sm:w-auto"
@@ -110,7 +110,7 @@ export default {
                 store.dispatch('updateTwelveMonthsCodes')
             }
         }
-       
+
         return {
             code: computed(() => store.state.code),
             generateReference,

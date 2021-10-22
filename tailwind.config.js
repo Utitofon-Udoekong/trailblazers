@@ -7,7 +7,7 @@ module.exports = {
         'sans': ['Lato', 'sans-serif']
       },
       backgroundImage: {
-        'hero-pattern-1': "url('./assets/images/carouselimages/carouselimage.jpg')",
+        'hero-pattern-1': "url('./assets/images/carouselimages/carouselimage1.jpg')",
         'hero-pattern-2': "url('./assets/images/carouselimages/carouselimage2.jpg')",
       },
       colors: {

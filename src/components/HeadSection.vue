@@ -43,7 +43,7 @@
           >TRADE THE MARKET LIKE A PRO WITH THE HELP OF EXPERTS</p>
           <p class="text-md sm:text-lg pb-2 sm:pb-6">Join our vip channel and get 3 - 4 signals a day</p>
           <button class="p-3 text-black rounded-md w-5/12 bg-white font-bold">
-            <a href="/signals">JOIN NOW</a>
+            <a href="#vip">JOIN NOW</a>
           </button>
         </div>
         <div class="relative h-2/4 sm:h-full sm:max-w-2xl max-w-full">

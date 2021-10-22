@@ -9,6 +9,7 @@
         :space-between="30"
         :autoplay="true"
         :breakpoints="swiperOptions.breakpoints"
+        :loop="true"
       >
         <swiper-slide v-for="n in 9" :key="n">
           <div class="h-96">

@@ -7,6 +7,7 @@
                 :space-between="80"
                 :autoplay="true"
                 :breakpoints="SwiperOptions.breakpoints"
+                :loop="true"
             >
                 <swiper-slide v-for="n in 5" :key="n">
                     <div class="h-100">

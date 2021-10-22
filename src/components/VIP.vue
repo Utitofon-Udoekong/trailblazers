@@ -28,19 +28,23 @@ import router from '../router'
 const packages = [
     {
         title: "1 Month",
-        price: 50
+        price: 50,
+        link: "/signals"
     },
     {
         title: "3 Months",
-        price: 120
+        price: 120,
+        link: "/signals"
     },
     {
         title: "6 Months",
-        price: 250
+        price: 250,
+        link: "/signals"
     },
     {
         title: "12 Months",
-        price: 400
+        price: 400,
+        link: "/signals"
     },
 ]
 export default {
