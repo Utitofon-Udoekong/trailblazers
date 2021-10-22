@@ -51,8 +51,8 @@ export default {
 setup(){
     const store = useStore()
     const addTocart = (pack) => {
-        store.commit("addTocart", pack)
-        router.push("/signals")
+        store.commit("addTocart", pack);
+        router.push({path: "/signals"});
     }
     return {
         packages,

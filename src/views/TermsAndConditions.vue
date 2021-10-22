@@ -30,8 +30,6 @@
             <p>4. Options – Variable Degree of Risk : When you are involved in transactions in foreign currency; the risk element increases. You have two options namely put or call and you should be familiar with the differences and meaning of the options. You should be aware of which options need to be increased so that you can get higher profits. The purchaser can either offset or even expire the option depending upon the type of options and the nature of the option that was purchased. Exercising an option is always going to result in a cash statement. There are instances where the purchaser can acquire spot positions as well with associated liabilities for margin. If your purchased options expire , you will suffer a total loss of your investment and it shall also comprise purchase of the option as well as the transaction costs too. It is worth adding that deep out of the money options are least likely to be profitable. There are a lot of details that are involved in buying and selling of options and so when you indulge in it, you should be careful enough to check out all such details thoroughly as it can have huge repercussions. Check the clauses and the amount of loss it can evoke and related factors before indulging in the same.</p>
             <p class="text-black font-bold text-xl">Good luck as you make the best of our services!</p>
         </div>
-        <img src="@/assets/images/carouselimages/carouselimage1.jpg" class="hidden" alt />
-        <img src="@/assets/images/carouselimages/carouselimage2.jpg" class="hidden" alt />
         <Footer />
     </div>
 </template>

@@ -19,7 +19,6 @@ export default createStore({
   },
   actions: {
     getOneMonthCodes({commit}){
-      console.log("hi")
       codeServices.getOneMonthCodes().then(code => {
         commit("setCode", code)
       })
@@ -28,7 +27,6 @@ export default createStore({
       codeServices.updateOneMonthCodes();
     },
     getThreeMonthsCodes({commit}){
-      console.log("hi")
       codeServices.getThreeMonthsCodes().then(code => {
         commit("setCode", code)
       })
@@ -37,7 +35,6 @@ export default createStore({
       codeServices.updateThreeMonthsCodes();
     },
     getSixMonthsCodes({commit}){
-      console.log("hi")
       codeServices.getSixMonthsCodes().then(code => {
         commit("setCode", code)
       })
@@ -46,7 +43,6 @@ export default createStore({
       codeServices.updateSixMonthsCodes();
     },
     getTwelveMonthsCodes({commit}){
-      console.log("hi")
       codeServices.getTwelveMonthsCodes().then(code => {
         commit("setCode", code)
       })

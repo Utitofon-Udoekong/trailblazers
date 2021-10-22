@@ -1,5 +1,5 @@
 <template>
-  <div :class="`bg-hero-pattern-${bgNum}`" class="transition ease-linear duration-300 h-screen flex flex-col items-center text-white w-full bg-center bg-cover bg-no-repeat bg-black bg-blend-overlay bg-opacity-80">
+  <div :class="bgNum === 1 ? 'bg-hero-pattern-1 transition ease-linear duration-300 h-screen flex flex-col items-center text-white w-full bg-center bg-cover bg-no-repeat bg-black bg-blend-overlay bg-opacity-80' : 'bg-hero-pattern-2 transition ease-linear duration-300 h-screen flex flex-col items-center text-white w-full bg-center bg-cover bg-no-repeat bg-black bg-blend-overlay bg-opacity-80'" >
     <Navbar />
     <swiper
       class="w-full h-full sm:h-5/6 z-20"
@@ -22,7 +22,7 @@
       </div>
       <swiper-slide :data-swiper-autoplay="10000" class="flex md:flex-row flex-col justify-center w-full items-center h-full">
         <div class="max-w-full h-1/2 sm:h-full sm:max-w-lg text-center sm:text-left flex flex-col items-center justify-end sm:justify-center pl-0 sm:pl-10">
-          <p class="text-3xl md:text-5xl font-bold pb-3">
+          <p class="text-2xl md:text-5xl font-bold pb-3">
             WATCH, FOLLOW, COPY AND
             <span class="text-brand-red">PROFIT</span> TOGETHER
           </p>
@@ -37,16 +37,16 @@
         </div>
       </swiper-slide>
       <swiper-slide :data-swiper-autoplay="10000" class="flex md:flex-row flex-col justify-center items-center">
-        <div class="max-w-full h-2/4 sm:h-full sm:max-w-xl text-center sm:text-left flex flex-col sm:items-start items-center justify-end sm:justify-center pb-6 sm:pb-0 pl-0 sm:pl-6">
+        <div class="max-w-full h-2/4 sm:h-full -mb-6 sm:-mb-0 sm:max-w-xl text-center sm:text-left flex flex-col sm:items-start items-center justify-end sm:justify-center pb-6 sm:pb-0 px-3">
           <p
             class="text-2xl md:text-5xl font-bold pb-1"
           >TRADE THE MARKET LIKE A PRO WITH THE HELP OF EXPERTS</p>
-          <p class="text-md sm:text-lg pb-2 sm:pb-6">Join our vip channel and get 3 - 4 signals a day</p>
-          <button class="p-3 text-black rounded-md w-5/12 bg-white font-bold">
+          <p class="text-md sm:text-lg pb-1 sm:pb-6">Join our vip channel and get 3 - 4 signals a day</p>
+          <button class="p-2 sm:p-3 text-black rounded-md w-5/12 bg-white font-bold">
             <a href="#vip">JOIN NOW</a>
           </button>
         </div>
-        <div class="relative h-2/4 sm:h-full sm:max-w-2xl max-w-full">
+        <div class="relative h-2/4 -mb-6 sm:-mb-0 sm:h-full sm:max-w-2xl max-w-full">
           <img
             class="w-auto h-full"
             src="@/assets/images/carouselimages/person-2.png"
@@ -56,7 +56,7 @@
       </swiper-slide>
       <swiper-slide :data-swiper-autoplay="10000" class="flex md:flex-row flex-col justify-center items-center">
         <div class="max-w-full h-2/4 sm:h-full sm:max-w-lg text-center sm:text-left flex flex-col sm:items-start items-center justify-center sm:justify-center pl-0 sm:pl-8">
-          <p class="text-3xl md:text-5xl font-bold pb-4">
+          <p class="text-2xl md:text-5xl font-bold pb-4">
             JOIN OUR
             <span class="text-brand-red">FREE</span> SIGNAL CHANNEL
           </p>
@@ -84,7 +84,6 @@ import "swiper/components/navigation/navigation.scss"
 SwiperCore.use([Navigation, Autoplay]);
 import Navbar from "./Navbar.vue";
 import { ref } from '@vue/reactivity';
-import { watch } from '@vue/runtime-core';
 export default {
   components: {
     Swiper,
@@ -92,17 +91,11 @@ export default {
     Navbar
   },
   setup() {
+    let twos = [1,2];
     const onSlideChange = () => {
-      bgNum.value++
+      bgNum.value = Math.floor((Math.random() * twos.length) + 1)
     };
     let bgNum = ref(1)
-    watch(bgNum,(oldValue) => {
-      if(oldValue === 1){
-        onSlideChange()
-      }else {
-        bgNum.value = 1
-      }
-    })
     return {
       onSlideChange,
       bgNum
@@ -111,7 +104,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 .h-mid-screen {
   height: 90vh;
 }
