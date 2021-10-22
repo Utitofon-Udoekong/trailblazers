@@ -7,16 +7,16 @@
                 </div>
                 <p class="text-white text-sm mb-3">Trailblazers is a signal service giving people from all walks of life the opportunity to benefit from our expert analysis and achieve consistent results in the Forex markets.</p>
                 <div class="flex ">
-                    <a href="#" class="mr-6 w-6">
+                    <a href="https://twitter.com/Trailblazers_in" target="_blank" class="mr-6 w-6">
                         <img src="@/assets/images/icons/twitter.png" alt="" class="w-full">
                     </a>
-                     <a href="#" class="mr-6 w-6">
+                     <a href="https://t.me/trailblazersinvesting" target="_blank" class="mr-6 w-6">
                         <img src="@/assets/images/icons/telegram.png" alt="" class="w-full">
                     </a>
-                     <a href="#" class="mr-6 w-6">
+                     <a href="https://instagram.com/trailblazersinvesting_" target="_blank" class="mr-6 w-6">
                         <img src="@/assets/images/icons/instagram.png" alt="" class="w-full">
                     </a>
-                     <a href="#" class="mr-6 w-6">
+                     <a href="https://www.facebook.com/101820415629021" target="_blank" class="mr-6 w-6">
                         <img src="@/assets/images/icons/facebook.png" alt="" class="w-full">
                     </a>
                 </div>
