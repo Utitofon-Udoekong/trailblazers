@@ -109,7 +109,7 @@
         </div>
       </div>
       <p class="py-3" v-if="packagePrice < 50">Please go back and choose a plan</p>
-      <FlutterwaveComponent class="py-3" v-if="showFlutterButton" />
+      <FlutterwaveComponent class="py-3" v-if="showFlutterButton" :userInfo="state" />
     </div>
   </div>
 </template>
@@ -131,6 +131,7 @@ export default {
       email: "",
       phone: ""
     })
+   
     const rules = computed(() => {
       return {
         name: { required },

@@ -4,7 +4,7 @@
             <p class="pr-4 text-md font-semibold">For Nigerians</p>
             <flutterwave-pay-button-vue
                 :tx_ref="generateReference()"
-                :amount="packagePrice * 501"
+                :amount="packagePrice * 625"
                 currency="NGN"
                 payment_options="card,ussd"
                 redirect_url
@@ -41,9 +41,9 @@
                 :callback="makePaymentCallback"
                 :onclose="closePaymentModal"
                 :customer="{
-                    name: 'Demo Customer  Name',
-                    email: 'customer@mail.com',
-                    phone_number: '0818450****'
+                    name: userInfo.name,
+                    email: userInfo.email,
+                    phone_number: userInfo.phone
                 }"
             >Pay with Flutterwave</flutterwave-pay-button-vue>
         </div>
@@ -79,13 +79,18 @@
 <script>
 import flutterwavePayButtonVue from 'flutterwave-vue-v3/src/lib-components/flutterwave-pay-button.vue'
 import { useStore } from 'vuex'
-import { computed } from '@vue/reactivity'
+import { computed} from '@vue/reactivity'
 import { Icon } from '@iconify/vue';
 export default {
+    props: {
+        userInfo: {
+            type: Object,
+            required: true
+        }
+    },
     components: { flutterwavePayButtonVue, Icon },
     setup() {
         const store = useStore()
-
         const generateReference = () => {
             let date = new Date()
             return date.getTime().toString();
@@ -109,6 +114,7 @@ export default {
             }
         }
 
+
         return {
             code: computed(() => store.state.code),
             generateReference,
@@ -118,7 +124,7 @@ export default {
             consumer_mac: Math.random().toString(7).replace(/[^a-z]+/g, '').substr(0, 5),
             closePaymentModal,
             makePaymentCallback,
-            copyToClipboard: (code) => navigator.clipboard.writeText(code)
+            copyToClipboard: (code) => navigator.clipboard.writeText(code),
         }
     }
 }
