@@ -21,14 +21,14 @@
         </div>
       </div>
       <swiper-slide :data-swiper-autoplay="10000" class="flex md:flex-row flex-col justify-center w-full items-center h-full">
-        <div class="max-w-full h-1/2 sm:h-full sm:max-w-lg text-center sm:text-left flex flex-col items-center justify-end sm:justify-center pl-0 sm:pl-10">
+        <div class="max-w-full h-1/2 md:h-full sm:max-w-lg text-center md:text-left flex flex-col items-center justify-end sm:justify-center pl-0 sm:pl-10">
           <p class="text-2xl md:text-5xl font-bold pb-3">
             WATCH, FOLLOW, COPY AND
             <span class="text-brand-red">PROFIT</span> TOGETHER
           </p>
           <p class="text-lg">Trade the market by following the signals given by our experts</p>
         </div>
-        <div class="relative h-2/3 sm:h-full max-w-full sm:max-w-2xl">
+        <div class="relative h-2/3 md:h-full max-w-full sm:max-w-2xl">
           <img
             class="w-auto h-full"
             src="@/assets/images/carouselimages/person-1.png"
@@ -37,7 +37,7 @@
         </div>
       </swiper-slide>
       <swiper-slide :data-swiper-autoplay="10000" class="flex md:flex-row flex-col justify-center items-center">
-        <div class="max-w-full h-2/4 sm:h-full -mb-6 sm:-mb-0 sm:max-w-xl text-center sm:text-left flex flex-col sm:items-start items-center justify-end sm:justify-center pb-6 sm:pb-0 px-3">
+        <div class="max-w-full h-2/4 md:h-full -mb-6 sm:-mb-0 sm:max-w-xl text-center md:text-left flex flex-col md:items-start items-center justify-end sm:justify-center pb-6 sm:pb-0 px-3">
           <p
             class="text-2xl md:text-5xl font-bold pb-1"
           >TRADE THE MARKET LIKE A PRO WITH THE HELP OF EXPERTS</p>
@@ -46,7 +46,7 @@
             <a href="#vip">JOIN NOW</a>
           </button>
         </div>
-        <div class="relative h-2/4 -mb-6 sm:-mb-0 sm:h-full sm:max-w-2xl max-w-full">
+        <div class="relative h-2/4 -mb-6 sm:-mb-0 md:h-full sm:max-w-2xl max-w-full">
           <img
             class="w-auto h-full"
             src="@/assets/images/carouselimages/person-2.png"
@@ -55,7 +55,7 @@
         </div>
       </swiper-slide>
       <swiper-slide :data-swiper-autoplay="10000" class="flex md:flex-row flex-col justify-center items-center">
-        <div class="max-w-full h-2/4 sm:h-full sm:max-w-lg text-center sm:text-left flex flex-col sm:items-start items-center justify-center sm:justify-center pl-0 sm:pl-8">
+        <div class="max-w-full h-2/4 md:h-full sm:max-w-lg text-center sm:text-left flex flex-col md:items-start items-center justify-center sm:justify-center pl-0 sm:pl-8">
           <p class="text-2xl md:text-5xl font-bold pb-4">
             JOIN OUR
             <span class="text-brand-red">FREE</span> SIGNAL CHANNEL
@@ -64,7 +64,7 @@
             <a target="_blank" href="https://t.me/trailblazersinvesting">JOIN NOW</a>
           </button>
         </div>
-        <div class="relative h-2/4 sm:h-full max-w-full sm:max-w-2xl">
+        <div class="relative h-2/4 md:h-full max-w-full sm:max-w-2xl">
           <img
             class="w-auto h-full"
             src="@/assets/images/carouselimages/person-3.png"

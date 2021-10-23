@@ -1,6 +1,6 @@
 <template>
   <nav
-    class="flex w-full items-center justify-between py-2 px-6 sm:px-20 z-30 bg-black sm:h-1/6 fixed sm:static top-0 inset-x-0 h-auto"
+    class="flex w-full items-center justify-between py-2 px-6 md:px-20 z-30 bg-black sm:h-1/6 fixed sm:static top-0 inset-x-0 h-auto"
   >
     <div class="flex items-center">
       <div class="logo w-16 sm:w-auto sm:h-20 h-12">

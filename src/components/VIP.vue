@@ -1,8 +1,8 @@
 <template>
   <div class="mb-10" id="vip">
     <p class="text-center text-3xl md:text-5xl font-bold pb-20">Subscribe to our VIP Packages</p>
-    <div class="flex justify-center sm:flex-row flex-col px-6 sm:px-0">
-        <div class="shadow-xl text-center mx-1.5 rounded-md relative overflow-hidden sm:w-auto w-full mb-8 sm:mb-0" v-for="(pack, i) in packages" :key="i">
+    <div class="flex justify-center sm:flex-row flex-col flex-wrap px-6 sm:px-0">
+        <div class="shadow-xl text-center mx-1.5 rounded-md relative overflow-hidden sm:w-auto w-full mb-8 md:mb-0" v-for="(pack, i) in packages" :key="i">
             <p class="bg-black text-white py-3 text-md sm:text-lg font-semibold">{{pack.title}}</p>
             <p class="py-3 text-3xl sm:text-5xl font-bold shadow-md">${{pack.price}}</p>
             <div class="p-8">

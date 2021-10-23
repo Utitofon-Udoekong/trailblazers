@@ -13,7 +13,6 @@
                 :customizations="{
                     title: 'Trailblazers',
                     description: packageTitle,
-                    logo: '@/assets/images/logo.png'
                 }"
                 :callback="makePaymentCallback"
                 :onclose="closePaymentModal"
@@ -38,7 +37,6 @@
                 :customizations="{
                     title: 'Trailblazers',
                     description: packageTitle,
-                    logo: '@/assets/images/logo.png'
                 }"
                 :callback="makePaymentCallback"
                 :onclose="closePaymentModal"

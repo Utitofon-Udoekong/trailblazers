@@ -3,7 +3,7 @@
     <p
       class="text-3xl font-bold pb-10 text-center"
     >Check out our trade analysis and how they played out</p>
-    <div class="px-6 sm:px-0 max-w-full sm:max-w-5xl mx-auto w-full">
+    <div class="px-6 md:px-0 max-w-full sm:max-w-5xl mx-auto w-full">
       <swiper
         :slides-per-view="2"
         :space-between="30"
@@ -41,12 +41,12 @@ export default {
         // when window width is >= 320px
         320: {
           slidesPerView: 1,
-          spaceBetween: 20
+          spaceBetween: 10
         },
         // when window width is >= 480px
         480: {
           slidesPerView: 2,
-          spaceBetween: 30
+          spaceBetween: 10
         },
       }
     }

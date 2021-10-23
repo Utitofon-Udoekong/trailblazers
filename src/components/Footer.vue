@@ -1,6 +1,6 @@
 <template>
-    <footer class="bg-black px-6 py-10 sm:px-10" id="footer">
-        <div class="flex justify-around sm:items-center items-start flex-col sm:flex-row">
+    <footer class="bg-black px-4 py-10 sm:px-10" id="footer">
+        <div class="flex justify-around md:items-center items-start flex-col md:flex-row">
             <div class="sm:max-w-xs max-w-full">
                 <div class="w-44 sm:w-auto sm:h-20 h-16 mb-4">
                     <img src="@/assets/images/logo-text.png" alt="logo" class="w-full h-full" />
@@ -21,10 +21,10 @@
                     </a>
                 </div>
             </div>
-            <div class="max-w-full sm:max-w-lg mt-8 sm:mt-0">
+            <div class="max-w-full sm:max-w-lg mt-8 md:mt-0">
                 <p class="text-sm text-white"><span class="font-bold">Risk Disclosure:</span> Trading Foreign Exchange (FOREX), contract for differences (CFDs) and precious metals carries a high level of risk and may not be suitable for all the investors. Using leverage creates additional risk. Please carefully consider your investment objectives, expperience level, and risk tolerance before deciding to trade FOREX or CFDs. Your total losses can exceed the amount of your initial payment. For the full legal information, please check our <a class="underline text-blue-700" href="/tac">Terms&Conditions</a> page.</p>
             </div>
-            <div class="max-w-full sm:max-w-xs mt-8 sm:mt-0">
+            <div class="max-w-full sm:max-w-xs mt-8 md:mt-0">
                 <ul class="text-white text-sm sm:text-md">
                     <li><a href="#">Home</a></li>
                     <li><a href="#vip">Signals</a></li>
@@ -36,7 +36,7 @@
                 </ul>
             </div>
         </div>
-        <p class="text-white text-left sm:text-center pt-6">If you have any issue with the website contact the developer on <a class="text-green-600 text-lg" target="_blank" href="https://wa.me/message/B6REMA2U35WIP1">whatsapp </a> </p>
+        <p class="text-white text-left md:text-center pt-6">If you have any issue with the website contact the developer on <a class="text-green-600 text-lg" target="_blank" href="https://wa.me/message/B6REMA2U35WIP1">whatsapp </a> </p>
     </footer>
 </template>
 
