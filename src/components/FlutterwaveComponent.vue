@@ -98,16 +98,16 @@ export default {
             console.log("callback", response)
             if (response.amount === 50) {
                 store.dispatch('getOneMonthCodes');
-                // store.dispatch('updateOneMonthCodes')
+                store.dispatch('updateOneMonthCodes');
             } else if (response.amount === 120) {
                 store.dispatch('getThreeMonthsCodes');
-                // store.dispatch('updateThreeMonthsCodes')
+                store.dispatch('updateThreeMonthsCodes');
             } else if (response.amount === 250) {
                 store.dispatch('getSixMonthsCodes');
-                // store.dispatch('updateSixMonthsCodes')
+                store.dispatch('updateSixMonthsCodes');
             } else {
                 store.dispatch('getTwelveMonthsCodes');
-                // store.dispatch('updateTwelveMonthsCodes')
+                store.dispatch('updateTwelveMonthsCodes');
             }
         }
 
