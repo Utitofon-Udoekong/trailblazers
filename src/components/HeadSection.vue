@@ -5,7 +5,6 @@
       class="w-full h-full sm:h-5/6 z-20"
       :slides-per-view="1"
       :space-between="50"
-      :pagination="{ clickable: true }"
       :navigation="{ nextEl: '.nextArrow', prevEl: '.prevArrow' }"
       :autoplay="true"
       @slide-change="onSlideChange"

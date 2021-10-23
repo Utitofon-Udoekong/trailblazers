@@ -4,7 +4,7 @@
             <p class="pr-4 text-md font-semibold">For Nigerians</p>
             <flutterwave-pay-button-vue
                 :tx_ref="generateReference()"
-                :amount="packagePrice * 625"
+                :amount="packagePrice * 450"
                 currency="NGN"
                 payment_options="card,ussd"
                 redirect_url
