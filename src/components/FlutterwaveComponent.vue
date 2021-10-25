@@ -59,11 +59,13 @@
         </p>
         <ul class="font-semibold list-disc pl-4" v-if="code !== 'how you reach here'">
             <p>STEPS TO JOIN VIP</p>
-            <li>COPY THE CODE SENT TO YOU</li>
-            <li>CLICK ON THE BUTTON BELOW THIS LIST</li>
-            <li>START THE BOT</li>
-            <li>CLICK ON “USE ACTIVATION CODE”</li>
-            <li>PASTE THE CODE YOU COPIED</li>
+            <li>Copy the code sent to you</li>
+            <li>Click on the button below this list</li>
+            <li>Start the Bot</li>
+            <li>Click on “USE ACTIVATION CODE”</li>
+            <li>Paste the code you copied</li>
+            <li>Click on the "ENTER" Button</li>
+            <li>You'll be automatically redirected to the VIP channel. Welcome to Trailblazers</li>
         </ul>
         <button
             v-if="code !== 'how you reach here' "
