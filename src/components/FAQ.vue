@@ -61,7 +61,7 @@ const faqs = [
     {
         q: "How do you guys trade?",
         a: "We send limit orders and instant market execution but 90% of the time.we send limit orders.",
-        id: "tab-single-seven"
+        id: "tab-single-eight"
     },
     // {
     //     q: "How can you help me?",
