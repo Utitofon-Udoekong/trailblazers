@@ -9,10 +9,10 @@
                 :breakpoints="SwiperOptions.breakpoints"
                 :loop="true"
             >
-                <swiper-slide v-for="n in 5" :key="n">
+                <swiper-slide v-for="n in 20" :key="n">
                     <div class="h-100">
                         <img
-                            :src="require(`@/assets/images/testimonies/T${n}.png`)"
+                            :src="require(`@/assets/images/testimonies/t${n}.png`)"
                             class="w-full h-full"
                             :alt="n"
                         />
