@@ -12,7 +12,7 @@
                 <swiper-slide v-for="n in 20" :key="n">
                     <div class="h-100">
                         <img
-                            :src="require(`@/assets/images/testimonies/t${n}.png`)"
+                            :src="require(`@/assets/images/testimonies/t${n}.jpg`)"
                             class="w-full h-full"
                             :alt="n"
                         />
