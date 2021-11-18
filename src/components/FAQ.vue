@@ -58,6 +58,11 @@ const faqs = [
         a: "There is no need for you to be an expert – let us play this role. The service we offer is a good one for people who are looking for a great investment or for those who just need some extra profit. This is an opportunity given to the beginners and also to traders with some FX trading experience.",
         id: "tab-single-six"
     },
+    {
+        q: "How do you guys trade?",
+        a: "We send limit orders and instant market execution but 90% of the time.we send limit orders.",
+        id: "tab-single-seven"
+    },
     // {
     //     q: "How can you help me?",
     //     a: "We can suggest some high-quality services which are especially appropriate for the beginners and active traders, as well.",
