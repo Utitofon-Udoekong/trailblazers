@@ -26,7 +26,7 @@ const faqs = [
     {
         q: "What Is Trailblazers?",
         a: "We are a team of traders with 2+ years experience in thе Exchange sphere. During the years we have decided to unite all of our knowledge and skills and make them available for you, our customers. If you need to obtain information about FOREX trading and all the abilities for change and abundance, this is the right place! Nowadays, running a business straight from home is a quite attractive way for most of the people abroad. But it’s of a great importance for you to remember that Stock Exchange trading is not easy. The difficulties are mainly concerned to make some profit and that’s why we are the professionals who will make things happen.",
-        id: "tab-single-seven"
+        id: "tab-single-zero"
     },
     {
         q: "How can i receive your signals?",
@@ -61,7 +61,7 @@ const faqs = [
     {
         q: "How do you guys trade?",
         a: "We send limit orders and instant market execution but 90% of the time.we send limit orders.",
-        id: "tab-single-eight"
+        id: "tab-single-seven"
     },
     // {
     //     q: "How can you help me?",
